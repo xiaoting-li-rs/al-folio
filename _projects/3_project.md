@@ -1,81 +1,112 @@
 ---
 layout: page
-title: project 3 with very long name
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
+title: Urban Function Mapping for Energy Demand
+description: Energy Modeling Using Urban Function from Point of Interest (POI) and Area of Interest (AOI) Data
+img: assets/img/urban_function.jpg
 importance: 3
-category: work
+category: energy_modeling
+related_publications: li2021mapping_euluc
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Stage 2.5: Land Use Context for Energy Demand Proxies
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+This project bridges urban morphology and energy demand by incorporating functional land use information, recognizing that different urban functions have distinct energy consumption patterns and temporal profiles.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+### Project Overview
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+Urban energy demand is not only determined by building characteristics but also by how buildings are used. This project develops innovative methods to map urban functions using novel Point of Interest (POI) and Area of Interest (AOI) datasets, providing critical context for energy demand modeling.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+### Key Innovations
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+- **Novel Data Sources**: First application of comprehensive POI and AOI datasets for fine-grained urban land use mapping in energy modeling contexts.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+- **Machine Learning Classification**: Development of Random Forest classifiers optimized for urban function identification using multi-source geospatial data.
 
-{% raw %}
+- **Energy Use Profiles**: Direct linkage between functional zones (residential, commercial, industrial) and distinct energy consumption patterns and temporal profiles.
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+- **Cross-City Scalability**: Methodology designed for application across multiple cities with varying urban characteristics and data availability.
 
-{% endraw %}
+### Technical Approach
+
+**Data Integration**:
+- Point of Interest (POI) data providing business and facility locations
+- Area of Interest (AOI) data defining functional boundaries
+- Building footprint and morphology data from previous stages
+- Demographic and socioeconomic indicators
+
+**Classification Methodology**:
+- Random Forest ensemble learning for robust classification
+- Multi-scale feature extraction from POI density and diversity
+- Temporal analysis of activity patterns using mobile phone data
+- Integration with building morphology for context-aware classification
+
+**Validation Framework**:
+- Ground truth collection through field surveys
+- Cross-validation with official land use maps
+- Accuracy assessment across different urban typologies
+- Uncertainty quantification and propagation
+
+### Functional Categories and Energy Implications
+
+**Residential Areas**:
+- Heating/cooling dominated consumption
+- Peak demand in evening and morning hours
+- Seasonal variations in energy use patterns
+- Population density effects on per-capita consumption
+
+**Commercial Zones**:
+- Daytime peak energy demand
+- High electricity consumption for lighting and equipment
+- Weekend/weekday variation patterns
+- Building age and type effects on efficiency
+
+**Industrial Areas**:
+- Process-driven energy consumption
+- Continuous or shift-based demand patterns
+- High-intensity energy use per unit area
+- Fuel type diversity (electricity, gas, steam)
+
+**Mixed-Use Areas**:
+- Complex temporal demand patterns
+- Superposition of residential and commercial profiles
+- Density effects on energy infrastructure efficiency
+
+### Integration with Energy Models
+
+The functional classification enables:
+
+- **Demand Profiling**: Assignment of appropriate energy use profiles to different areas
+- **Temporal Modeling**: Incorporation of activity-based temporal variations
+- **Scenario Analysis**: Assessment of land use change impacts on energy demand
+- **Policy Evaluation**: Analysis of zoning and development policies on energy systems
+
+### Cross-City Applications
+
+Methodology has been applied to:
+- Beijing (primary case study with comprehensive validation)
+- Multiple Chinese cities for scalability testing
+- International cities for transferability assessment
+
+### Uncertainty and Quality Control
+
+**Classification Accuracy**:
+- Overall accuracy >85% across major functional categories
+- Confusion matrix analysis for systematic error identification
+- Spatial accuracy assessment using high-resolution reference data
+
+**Uncertainty Propagation**:
+- Monte Carlo simulation for classification uncertainty
+- Sensitivity analysis for energy model inputs
+- Confidence intervals for energy demand estimates
+
+### Future Developments
+
+This functional mapping provides the contextual foundation for:
+- Dynamic occupancy modeling (Stage 3)
+- Policy scenario analysis (Stage 4)
+- Integration with climate vulnerability assessments
+- Real-time energy demand forecasting systems
+
+---
+
+*This project serves as Stage 2.5 in the research framework, providing essential functional context that bridges urban morphology with dynamic energy demand patterns.*

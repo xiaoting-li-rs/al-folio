@@ -1,80 +1,119 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
-category: fun
+title: Dynamic Residential Vacancy Modeling
+description: Dynamic Energy Demand Modeling Using Urban Residential Vacancy Indicators
+img: assets/img/vacancy_modeling.jpg
+importance: 4
+category: energy_modeling
+related_publications: li2022mapping_vacancies
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Stage 3: Dynamic Energy Demand Indicators
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+This project introduces temporal dynamics into urban energy modeling by developing methods to infer residential occupancy patterns and vacancy rates, enabling more accurate and responsive energy demand estimates.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+### Project Overview
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+Traditional energy models often assume static occupancy patterns, leading to significant errors in demand forecasting. This project develops innovative methods to detect and quantify residential vacancy dynamics using multi-source temporal data, providing a crucial missing piece for accurate urban energy modeling.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+### Key Innovations
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+- **Multi-Source Temporal Analysis**: Novel integration of Nighttime Lights (NTL), building activity indicators, and mobile phone data to infer occupancy dynamics.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+- **Vacancy Detection Algorithm**: Development of robust algorithms to identify vacant residential units and quantify occupancy rates at high spatial and temporal resolution.
 
-{% raw %}
+- **Dynamic Energy Refinement**: Integration of vacancy metrics into energy models to capture infrastructure underutilization and seasonal fluctuations.
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+- **Temporal Scalability**: Methods capable of detecting both short-term (daily/weekly) and seasonal (monthly/yearly) vacancy patterns.
 
-{% endraw %}
+### Technical Methodology
+
+**Data Sources and Processing**:
+- **Nighttime Lights (NTL)**: VIIRS-DNB and Luojia-1 satellite data for activity detection
+- **Building Activity**: Thermal signatures and electricity consumption patterns
+- **Mobile Phone Data**: Anonymized location data for occupancy validation
+- **Administrative Records**: Census and utility connection data for ground truth
+
+**Vacancy Detection Algorithm**:
+1. **Baseline Establishment**: Historical occupancy patterns for different building types
+2. **Anomaly Detection**: Statistical methods to identify deviations from expected patterns
+3. **Temporal Filtering**: Smoothing algorithms to distinguish vacancy from temporary absence
+4. **Spatial Validation**: Cross-validation using neighboring building patterns
+
+**Energy Model Integration**:
+- **Occupancy Scaling**: Dynamic adjustment of energy demand based on actual occupancy
+- **Infrastructure Efficiency**: Modeling of shared system efficiency under varying occupancy
+- **Seasonal Adjustments**: Incorporation of vacation and migration patterns
+- **Uncertainty Quantification**: Probabilistic modeling of occupancy uncertainty
+
+### Validation and Accuracy Assessment
+
+**Ground Truth Validation**:
+- Field surveys in Beijing covering 500+ residential buildings
+- Utility company data for electricity connection status
+- Property management records for occupancy verification
+- Cross-validation with census data and administrative records
+
+**Accuracy Metrics**:
+- Overall vacancy detection accuracy: 78-85%
+- Temporal correlation with known seasonal patterns: R² > 0.7
+- Spatial consistency with neighborhood characteristics
+- False positive/negative analysis for different building types
+
+### Applications and Impact
+
+**Energy System Planning**:
+- More accurate demand forecasting for grid planning
+- Infrastructure sizing based on actual rather than theoretical demand
+- Peak demand prediction incorporating occupancy dynamics
+
+**Urban Policy**:
+- Housing policy evaluation through vacancy monitoring
+- Urban sprawl assessment and compact development planning
+- Affordable housing program effectiveness measurement
+
+**Climate Resilience**:
+- Heat wave vulnerability assessment based on actual occupancy
+- Emergency response planning using real-time occupancy data
+- Energy poverty identification through consumption-occupancy analysis
+
+### Case Study: Beijing Residential Vacancy
+
+**Spatial Patterns**:
+- Higher vacancy rates in peripheral developments (15-25%)
+- Lower vacancy in central urban areas (5-10%)
+- Correlation with housing prices and transportation accessibility
+
+**Temporal Dynamics**:
+- Seasonal variations related to Spring Festival migration
+- Weekly patterns reflecting work-related temporary absence
+- Long-term trends related to urban development cycles
+
+**Energy Implications**:
+- 12-18% reduction in actual vs. theoretical energy demand
+- Significant implications for infrastructure planning
+- Improved accuracy in peak demand forecasting
+
+### Model Robustness and Sensitivity
+
+**Threshold Sensitivity**:
+- Analysis of vacancy detection thresholds across building types
+- Seasonal adjustment factors for different climate zones
+- Urban density effects on detection accuracy
+
+**Temporal Aggregation**:
+- Optimal temporal windows for different applications
+- Trade-offs between temporal resolution and accuracy
+- Integration with weather and economic data for enhanced prediction
+
+### Future Developments
+
+This dynamic vacancy modeling enables:
+- Real-time energy demand adjustment systems
+- Integration with smart grid technologies
+- Enhanced climate vulnerability assessments
+- Policy scenario modeling for housing and energy systems
+
+---
+
+*This project represents Stage 3 of the research framework, introducing critical temporal dynamics that significantly improve the accuracy and applicability of urban energy demand models.*

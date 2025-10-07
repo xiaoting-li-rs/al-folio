@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Research projects in urban energy modeling, remote sensing, and climate-energy interactions.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: [energy_modeling, ai_tools]
 horizontal: false
 ---
 

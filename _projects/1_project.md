@@ -1,81 +1,52 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: ICESat-2 LiDAR for Urban Energy Modeling
+description: Energy Modeling Using Urban Structure from ICESat-2 Light Detection and Ranging (LiDAR)
+img: assets/img/icesat2_project.jpg
 importance: 1
-category: work
-related_publications: true
+category: energy_modeling
+related_publications: li2024icesat2
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Stage 1: Data Foundations for Energy Modeling
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+This project represents the foundational stage of my research agenda, focusing on developing innovative methods to extract urban structure information from sparse satellite LiDAR data for energy demand modeling applications.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+### Project Overview
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+Urban energy demand is intrinsically linked to urban morphology and structure. Traditional methods for obtaining building height and urban structure information are often limited by data availability, cost, and spatial coverage. This project leverages the revolutionary ICESat-2 satellite mission to develop scalable methods for urban structure characterization.
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+### Key Innovations
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+- **Adaptive Fitting Method**: Developed a novel adaptive fitting approach to estimate urban structure from sparse ICESat-2 LiDAR signals, overcoming the challenge of limited sampling density in urban areas.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+- **Energy-Related Indicators**: For the first time at this scale, derived key energy-related indicators such as surface-to-volume ratio directly from satellite LiDAR data, enabling large-scale energy demand assessments.
 
-{% raw %}
+- **Integrated Modeling**: Combined population and meteorological data with urban structure metrics to simulate seasonal energy demand with improved accuracy compared to traditional methods.
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+- **Uncertainty Quantification**: Systematically quantified uncertainties from sampling density and model fitting to enhance forecasting robustness and reliability.
 
-{% endraw %}
+### Technical Approach
+
+The methodology involves several key steps:
+
+1. **Data Processing**: Advanced filtering and noise reduction of ICESat-2 ATL08 land and vegetation height products
+2. **Adaptive Surface Simulation**: Development of adaptive algorithms to reconstruct urban surfaces from sparse point measurements
+3. **Feature Extraction**: Calculation of urban morphology metrics including building heights, surface roughness, and volume ratios
+4. **Energy Modeling Integration**: Incorporation of derived metrics into physics-based energy demand models
+
+### Impact and Applications
+
+This work enables:
+- **Scalable Assessment**: City-scale energy demand modeling without expensive airborne LiDAR surveys
+- **Global Applications**: Methodology applicable to any urban area covered by ICESat-2
+- **Climate Resilience**: Better understanding of how urban form affects energy vulnerability under climate change
+- **Policy Support**: Data-driven insights for urban planning and energy policy decisions
+
+### Future Directions
+
+The methods developed in this project serve as the foundation for subsequent research stages, including integration with optical and SAR imagery for comprehensive urban energy modeling frameworks.
+
+---
+
+*This project contributes to Stage 1 of a unified research agenda focused on scalable, data-driven modeling of urban energy demand under climate variability, data scarcity, and equity considerations.*

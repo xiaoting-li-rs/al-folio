@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2024-11-20 09:15:00-0500
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+Grateful to receive the Excellent Student International Conference Travel Fund from Tsinghua University! Looking forward to sharing our research at upcoming conferences. ✈️🎓

@@ -1,81 +1,79 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: Multi-Source Remote Sensing for Urban Energy
+description: Energy Modeling Using Earth Observation-based Urban Building Stock Information
+img: assets/img/urban_morphology.jpg
 importance: 2
-category: work
-giscus_comments: true
+category: energy_modeling
+related_publications: li2024building_heights
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Stage 2: City-Scale Urban Structure for Energy Modeling
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+This project scales up from individual satellite tracks to comprehensive city-wide urban morphology mapping, leveraging multiple Earth observation data sources to create detailed building stock information for energy demand modeling.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+### Project Overview
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+While ICESat-2 provides valuable point measurements, comprehensive urban energy modeling requires wall-to-wall coverage of urban morphology. This project develops a high-performance computing workflow to map urban structure across thousands of settlements using complementary remote sensing technologies.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+### Key Innovations
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+- **HPC Workflow Development**: Created a scalable high-performance computing pipeline capable of processing urban morphology data for 10,000+ settlements simultaneously.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+- **Multi-Source Integration**: Innovative fusion of Synthetic Aperture Radar (SAR) and optical imagery to extract comprehensive urban form features including height, footprint, and compactness measures.
 
-{% raw %}
+- **Energy-Relevant Features**: Direct extraction of urban morphology parameters specifically linked to energy demand patterns, enabling physics-based energy modeling.
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+- **Extreme Weather Analysis**: Integration of morphology data with Land Surface Temperature, Nighttime Lights (NTL), and population data to analyze spatial energy patterns under extreme weather conditions.
 
-{% endraw %}
+### Technical Methodology
+
+The workflow encompasses:
+
+1. **Data Acquisition**: Systematic collection of Sentinel-1 SAR, Sentinel-2 optical, and ancillary datasets
+2. **Preprocessing Pipeline**: Automated radiometric and geometric correction across multiple data sources
+3. **Feature Extraction**: Deep learning-based extraction of building heights, footprints, and morphological indicators
+4. **Quality Assessment**: Comprehensive validation using airborne LiDAR and field surveys
+5. **Energy Model Integration**: Direct coupling with urban energy consumption models
+
+### Multi-Source Data Integration
+
+**Synthetic Aperture Radar (SAR)**:
+- Building height estimation through interferometric and polarimetric analysis
+- All-weather capability ensuring consistent temporal coverage
+- Penetration capabilities for complex urban environments
+
+**Optical Imagery**:
+- Building footprint delineation and land cover classification
+- Seasonal vegetation dynamics affecting energy demand
+- Urban heat island characterization
+
+**Ancillary Data**:
+- Population density for demand scaling
+- Meteorological data for climate-energy interactions
+- Nighttime lights for activity pattern validation
+
+### Applications and Impact
+
+This comprehensive urban morphology database enables:
+
+- **Dynamic Energy Modeling**: High-resolution inputs for spatiotemporal energy consumption models
+- **Climate Vulnerability Assessment**: Understanding how urban form affects energy resilience
+- **Policy Analysis**: Evidence-based urban planning for energy efficiency
+- **Cross-City Comparisons**: Standardized metrics for comparative urban energy analysis
+
+### Validation and Uncertainty
+
+Rigorous validation includes:
+- Comparison with airborne LiDAR data in multiple cities
+- Field survey validation of building characteristics
+- Uncertainty propagation through energy modeling chains
+- Sensitivity analysis for different urban typologies
+
+### Future Integration
+
+This city-scale morphology mapping provides the spatial foundation for subsequent research stages, including land use functional analysis and dynamic occupancy modeling for comprehensive urban energy assessment.
+
+---
+
+*This project represents Stage 2 of a unified research framework, building upon ICESat-2 foundations to enable comprehensive urban energy modeling at city scales.*

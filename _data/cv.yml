@@ -2,96 +2,171 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Xiaoting Li
+    - name: Email
+      value: lixt20@mails.tsinghua.edu.cn
+    - name: Phone
+      value: +86-188-0122-6782
     - name: Languages
-      value: English, German
+      value: Chinese (Native), English (Fluent)
+    - name: Expected Graduation
+      value: June 2026
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Ph.D. in Ecology
+      institution: Department of Earth System Science, Tsinghua University, China
+      year: 2020 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - "Thesis: Dynamic urban energy modeling through multi-source remote sensing and deep learning approaches"
+        - Research focus on urban energy demand modeling and climate-energy interactions
+        - Supervisor: Prof. Peng Gong
+    - title: B.Sc. in Geographic Information Science
+      institution: School of Earth and Space Sciences, Peking University, China
+      year: 2016 - 2020
       description:
-        - Description 1.
-        - Description 2.
+        - "Thesis: Mapping urban land use categories in Beijing with a fast area of interest (AOI)-based method"
+        - Graduated with honors in Geographic Information Science
 
-- title: Experience
+- title: Visiting Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Ongoing Collaboration
+      institution: Department of Geography, University of Hong Kong, Hong Kong SAR, China
+      year: 2021 - 2025
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Affiliated with Prof. Peng Gong's group
+        - Joint urban energy modeling research
+    - title: Visiting Student in Remote Sensing Intelligence
+      institution: Pengcheng National Laboratory, Shenzhen, China
+      year: 2023 - 2024
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - Advanced research in remote sensing applications
+        - Focus on intelligent mapping techniques
+    - title: Visiting Student in Remote Sensing
+      institution: Department of Geosciences, Texas Tech University, Lubbock, TX, USA
+      year: 2022 - 2023
       description:
+        - International research collaboration
+        - Remote sensing methodology development
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+- title: Research Interests
+  type: nested_list
+  contents:
+    - title: Core Topics
+      items:
+        - Urban energy demand modeling
+        - Clean and just energy transition
+        - Energy poverty and access
+        - Climate impacts on energy systems
+        - Energy equity
+        - Nexus of energy and environment
+    - title: Approach Areas
+      items:
+        - Earth observation integration
+        - Urban energy models
+        - Climate-energy-environment interactions
+        - High-resolution spatiotemporal analysis
+        - Scenario-based assessment
+        - Deep learning applications
 
-- title: Open Source Projects
+- title: Research Funding
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Excellent Student International Conference Travel Fund
+      institution: Tsinghua University
+      year: 2024
+      description:
+        - Amount: $1,500
+    - title: Promising Student Overseas Research Fund
+      institution: Tsinghua University
+      year: 2022
+      description:
+        - Amount: $10,000
+    - title: Hometown Revitalization Seed Fund
+      institution: Peking University
+      year: 2017
+      description:
+        - Amount: $500
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2020 - 2025
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - Research Assistant Scholarship (Tsinghua University)
+    - year: 2022
       items:
-        - Max Planck Medal
+        - Second Scholarship for Excellent Student (Tsinghua University)
+    - year: 2021
+      items:
+        - Second Scholarship for Excellent Student (Tsinghua University)
+    - year: 2019
+      items:
+        - Third Place in National Urban Modeling Competition (Esri, Inc.)
+        - Huo Yingjie Excellent Student Endeavor Scholarship (Peking University)
+    - year: 2018
+      items:
+        - Dai Qin Excellent Student Endeavor Scholarship (Peking University)
+    - year: 2017
+      items:
+        - Zhang Rongfa Excellent Student Endeavor Scholarship (Peking University)
+    - year: 2016
+      items:
+        - Huo Yingjie Excellent Student Endeavor Scholarship (Peking University)
 
-- title: Academic Interests
+- title: Teaching Experience
+  type: time_table
+  contents:
+    - title: Teaching Assistant, Global Change and Sustainability
+      institution: Tsinghua University
+      year: 2020 - 2021
+      description:
+        - Facilitated weekly seminars on global change, sustainability, and energy justice
+        - Guided students in geospatial analytics for environmental and energy datasets
+        - Supervised interdisciplinary research writing on energy transitions
+    - title: Field Assistant, Climate-Ecosystem-Energy Linkages Field Study
+      institution: Tsinghua University
+      year: 2020
+      description:
+        - Coordinated field investigations on ecosystem dynamics and energy systems
+        - Collected land cover and microclimate data for energy demand modeling
+        - Synthesized findings for curriculum development
+
+- title: Skills
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Programming and Data Science
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Python, SQL
+        - Parallel and GPU computing
+        - Large-scale data pipelines
+    - title: Machine Learning and Modeling
       items:
-        - Description 1.
-        - Description 2.
+        - Large Language Models (LLMs)
+        - PyTorch, deep learning (CNN, LSTM, Transformers)
+        - Spatiotemporal forecasting
+        - Optimization, simulation
+        - Uncertainty quantification
+    - title: Spatial Analysis
+      items:
+        - Google Earth Engine
+        - LiDAR, SAR, optical remote sensing
+        - QGIS
 
-- title: Other Interests
-  type: list
+- title: Leadership & Diversity & Inclusion
+  type: time_table
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - title: Educational Content Creator & Community Builder
+      year: 2024 - Present
+      description:
+        - Grew media channel with 5,000+ followers
+        - Organized academic workshops for underrepresented students
+        - Launched mentorship program for 10+ members from diverse backgrounds
+    - title: Voluntary STEM Educator and Mentor
+      year: 2016 - 2023
+      description:
+        - Led outreach sessions in rural schools
+        - Organized free STEM tutoring for first-generation and low-income students
+        - Fostered inclusive learning environments

@@ -1,80 +1,153 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
-img: assets/img/1.jpg
-importance: 3
-category: fun
+title: IntrAgent - AI for Energy Literature Mining
+description: Literature Mining for Energy and Climate with Large Language Models (LLMs)
+img: assets/img/intragent.jpg
+importance: 5
+category: ai_tools
+related_publications: ma2024intragent
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Stage 4: Equity and Policy Support
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+This project leverages cutting-edge artificial intelligence to systematically analyze vast amounts of energy and climate literature, providing evidence-based foundations for policy development and equity-focused energy transitions.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+### Project Overview
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+The transition to clean and equitable energy systems requires comprehensive understanding of existing research, policy frameworks, and implementation pathways. This project develops IntrAgent, an advanced Large Language Model (LLM) pipeline for structured, large-scale analysis of energy and climate literature, bridging the gap between research and policymaking.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+### Key Innovations
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+- **LLM-Powered Analysis**: Development of specialized language models fine-tuned for energy and climate domain knowledge extraction.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+- **Structured Mining Pipeline**: Automated pipeline for systematic literature review, knowledge extraction, and synthesis across multiple research domains.
 
-{% raw %}
+- **Policy-Research Bridge**: Novel methods to connect academic research findings with policy documents and implementation frameworks.
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+- **Scenario Integration**: Incorporation of policy assumptions as constraints in energy models to enable comprehensive scenario analysis.
 
-{% endraw %}
+### Technical Architecture
+
+**Data Collection and Preprocessing**:
+- Automated scraping of academic databases (Web of Science, Scopus, Google Scholar)
+- Policy document collection from government and international organizations
+- Text preprocessing and quality filtering for LLM input
+- Multi-language support for global literature coverage
+
+**LLM Pipeline Development**:
+- **Base Model**: Fine-tuning of transformer architectures on energy/climate corpus
+- **Named Entity Recognition**: Extraction of technologies, policies, and stakeholders
+- **Relationship Mapping**: Identification of causal relationships and dependencies
+- **Sentiment and Impact Analysis**: Assessment of policy effectiveness and research impact
+
+**Knowledge Graph Construction**:
+- Automated construction of domain knowledge graphs
+- Entity linking and relationship validation
+- Temporal analysis of research trends and policy evolution
+- Cross-domain connection identification
+
+### Applications and Use Cases
+
+**Literature Synthesis**:
+- Systematic review automation for energy transition pathways
+- Meta-analysis of energy efficiency interventions
+- Technology assessment and comparison across studies
+- Identification of research gaps and emerging topics
+
+**Policy Analysis**:
+- Policy document analysis for implementation strategies
+- Cross-jurisdictional policy comparison and effectiveness assessment
+- Stakeholder analysis and conflict identification
+- Timeline analysis of policy development and implementation
+
+**Scenario Development**:
+- Evidence-based scenario construction for energy modeling
+- Policy constraint identification for optimization models
+- Uncertainty quantification based on literature consensus
+- Multi-criteria decision analysis support
+
+### Energy Justice and Equity Focus
+
+**Equity Literature Mining**:
+- Systematic identification of energy justice research
+- Vulnerable population analysis across different contexts
+- Environmental justice impact assessment
+- Community engagement and participation analysis
+
+**Policy Equity Assessment**:
+- Analysis of distributional impacts in energy policies
+- Identification of equity considerations in policy documents
+- Best practice extraction for inclusive energy transitions
+- Barrier identification for equitable access
+
+### Validation and Quality Assurance
+
+**Expert Validation**:
+- Human expert review of extracted knowledge
+- Domain expert annotation of key relationships
+- Accuracy assessment across different literature types
+- Bias detection and mitigation strategies
+
+**Cross-Validation Methods**:
+- Comparison with manual systematic reviews
+- Consistency checks across different data sources
+- Temporal validation using historical policy outcomes
+- Geographic validation across different regions
+
+### Case Studies and Applications
+
+**Urban Energy Transition Pathways**:
+- Analysis of 500+ papers on urban energy systems
+- Identification of successful transition strategies
+- Policy recommendation synthesis for different city types
+- Barrier analysis and mitigation strategies
+
+**Energy Poverty Research Synthesis**:
+- Comprehensive review of energy poverty literature
+- Intervention effectiveness analysis
+- Policy tool identification and assessment
+- Regional variation analysis
+
+**Climate-Energy Nexus**:
+- Systematic analysis of climate-energy interactions
+- Adaptation and mitigation strategy synthesis
+- Co-benefit identification and quantification
+- Risk assessment and management strategies
+
+### Integration with Energy Models
+
+**Policy Constraint Integration**:
+- Automated extraction of policy constraints for optimization models
+- Scenario parameter derivation from literature consensus
+- Uncertainty bounds based on research variability
+- Dynamic policy updating for model refinement
+
+**Evidence-Based Parameterization**:
+- Technology cost and performance parameter extraction
+- Behavioral parameter derivation from social science literature
+- Market barrier quantification for realistic modeling
+- Regional adaptation of global parameters
+
+### Future Developments and Scaling
+
+**Real-Time Literature Monitoring**:
+- Continuous literature monitoring and analysis
+- Alert systems for emerging research and policy developments
+- Dynamic knowledge graph updating
+- Integration with research funding and policy databases
+
+**Multi-Language and Global Expansion**:
+- Extension to non-English literature for global coverage
+- Regional policy database integration
+- Cultural and contextual adaptation of analysis methods
+- Collaborative platform development for global research community
+
+**Advanced AI Integration**:
+- Integration with multimodal AI for figure and data extraction
+- Causal inference methods for policy effectiveness assessment
+- Predictive modeling for research and policy trends
+- Automated hypothesis generation for future research
+
+---
+
+*This project represents Stage 4 of the research framework, providing the policy and equity foundations necessary for implementing the technical energy modeling advances developed in previous stages.*
