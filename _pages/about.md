@@ -27,10 +27,14 @@ Currently, I am working on my dissertation titled *"Dynamic urban energy modelin
 
 My work has been published in leading journals including *Remote Sensing*, *Science Bulletin*, and *PNAS Nexus*. I am passionate about bridging the gap between cutting-edge research and practical applications for sustainable urban development and energy justice.
 
-**Research Interests:**
-- Urban energy demand modeling and forecasting
-- Climate-energy-environment nexus
-- Energy equity and environmental justice
-- Multi-source remote sensing applications
-- Deep learning for spatiotemporal modeling
-- Sustainable urban development
+<div class="research-interests">
+<h3>Research Interests</h3>
+<ul>
+  <li>Urban energy demand modeling and forecasting</li>
+  <li>Climate-energy-environment nexus</li>
+  <li>Energy equity and environmental justice</li>
+  <li>Multi-source remote sensing applications</li>
+  <li>Deep learning for spatiotemporal modeling</li>
+  <li>Sustainable urban development</li>
+</ul>
+</div>

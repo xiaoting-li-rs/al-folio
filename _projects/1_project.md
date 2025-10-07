@@ -16,32 +16,53 @@ This project represents the foundational stage of my research agenda, focusing o
 
 Urban energy demand is intrinsically linked to urban morphology and structure. Traditional methods for obtaining building height and urban structure information are often limited by data availability, cost, and spatial coverage. This project leverages the revolutionary ICESat-2 satellite mission to develop scalable methods for urban structure characterization.
 
-### Key Innovations
+<div class="key-innovations">
+<h3>Key Innovations</h3>
 
-- **Adaptive Fitting Method**: Developed a novel adaptive fitting approach to estimate urban structure from sparse ICESat-2 LiDAR signals, overcoming the challenge of limited sampling density in urban areas.
+<div class="innovation-item">
+<h4>Adaptive Fitting Method</h4>
+<p>Developed a novel adaptive fitting approach to estimate urban structure from sparse ICESat-2 LiDAR signals, overcoming the challenge of limited sampling density in urban areas.</p>
+</div>
 
-- **Energy-Related Indicators**: For the first time at this scale, derived key energy-related indicators such as surface-to-volume ratio directly from satellite LiDAR data, enabling large-scale energy demand assessments.
+<div class="innovation-item">
+<h4>Energy-Related Indicators</h4>
+<p>For the first time at this scale, derived key energy-related indicators such as surface-to-volume ratio directly from satellite LiDAR data, enabling large-scale energy demand assessments.</p>
+</div>
 
-- **Integrated Modeling**: Combined population and meteorological data with urban structure metrics to simulate seasonal energy demand with improved accuracy compared to traditional methods.
+<div class="innovation-item">
+<h4>Integrated Modeling</h4>
+<p>Combined population and meteorological data with urban structure metrics to simulate seasonal energy demand with improved accuracy compared to traditional methods.</p>
+</div>
 
-- **Uncertainty Quantification**: Systematically quantified uncertainties from sampling density and model fitting to enhance forecasting robustness and reliability.
+<div class="innovation-item">
+<h4>Uncertainty Quantification</h4>
+<p>Systematically quantified uncertainties from sampling density and model fitting to enhance forecasting robustness and reliability.</p>
+</div>
+</div>
 
-### Technical Approach
+<div class="technical-approach">
+<h3>Technical Approach</h3>
+<p>The methodology involves several key steps:</p>
 
-The methodology involves several key steps:
+<ol class="methodology-steps">
+  <li><strong>Data Processing</strong>: Advanced filtering and noise reduction of ICESat-2 ATL08 land and vegetation height products</li>
+  <li><strong>Adaptive Surface Simulation</strong>: Development of adaptive algorithms to reconstruct urban surfaces from sparse point measurements</li>
+  <li><strong>Feature Extraction</strong>: Calculation of urban morphology metrics including building heights, surface roughness, and volume ratios</li>
+  <li><strong>Energy Modeling Integration</strong>: Incorporation of derived metrics into physics-based energy demand models</li>
+</ol>
+</div>
 
-1. **Data Processing**: Advanced filtering and noise reduction of ICESat-2 ATL08 land and vegetation height products
-2. **Adaptive Surface Simulation**: Development of adaptive algorithms to reconstruct urban surfaces from sparse point measurements
-3. **Feature Extraction**: Calculation of urban morphology metrics including building heights, surface roughness, and volume ratios
-4. **Energy Modeling Integration**: Incorporation of derived metrics into physics-based energy demand models
+<div class="impact-applications">
+<h3>Impact and Applications</h3>
+<p>This work enables:</p>
 
-### Impact and Applications
-
-This work enables:
-- **Scalable Assessment**: City-scale energy demand modeling without expensive airborne LiDAR surveys
-- **Global Applications**: Methodology applicable to any urban area covered by ICESat-2
-- **Climate Resilience**: Better understanding of how urban form affects energy vulnerability under climate change
-- **Policy Support**: Data-driven insights for urban planning and energy policy decisions
+<ul class="impact-list">
+  <li><strong>Scalable Assessment</strong>: City-scale energy demand modeling without expensive airborne LiDAR surveys</li>
+  <li><strong>Global Applications</strong>: Methodology applicable to any urban area covered by ICESat-2</li>
+  <li><strong>Climate Resilience</strong>: Better understanding of how urban form affects energy vulnerability under climate change</li>
+  <li><strong>Policy Support</strong>: Data-driven insights for urban planning and energy policy decisions</li>
+</ul>
+</div>
 
 ### Future Directions
 
